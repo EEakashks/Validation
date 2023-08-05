@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c5a70011e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+  <div class = "form-box">
+
+    <h1>Sign Up</h1>
+    <form action="https://eeakashks.github.io/Frontendify/">
+    <div class="inputbox">
+        <i class="fa-solid fa-user"></i>
+        <label for="userName">Username <input id="userName" type="text" placeholder="Enter your name" onkeyup="validateName()"></label>
+        <span id="userName-error"></span>
+    </div>
+
+    <div class="inputbox">
+        <i class="fa-solid fa-envelope"></i>
+        <label for="email">email <input id="email" type="text" placeholder="Enter your mail" onkeyup="validateEmail()"></label>
+        <span id="email-error"></span>
+    </div>
+
+    <div class="inputbox">
+        <i class="fa-solid fa-lock"></i>
+        <label for="password">Password <input id="password" type="password" onkeyup="validatePassword()"></label>
+        <span id="password-error"></span>
+    </div>
+    <div class="inputbox">
+        <i class="fa-solid fa-lock"></i>
+        <label for="repeat">Repeat Password <input id="repeat" type="password" onkeyup="validateRepeat()"></label>
+        <span id="repeat-error"></span>
+    </div>
+    <div class="button-container">
+    <button id="submit" type="submit" onclick="return validateForm()"><strong>Submit</strong></button>
+</div>
+</form>
+    <div class="text-center">
+        <a href="login.html">Already having an account ?  Sign In</a>
+    </div>
+  </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
